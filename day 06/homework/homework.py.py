@@ -1,5 +1,3 @@
-
-
 name=input("please enter your name: ")
 surname=input("please enter your surname: ")
 print("Your name is",name + ".","Your surname is",surname,)
