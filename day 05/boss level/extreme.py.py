@@ -1,9 +1,9 @@
-from turtle import*
+from turtle import *
 shape("turtle")
 speed(50)
 width(8)
 color("gray")
-begin_fill
+begin_fill()
 goto(-300 , 0)
 forward(600)
 right(90)
@@ -18,6 +18,7 @@ right(90)
 forward(50)
 end_fill()
 
+begin_fill()
 penup()
 goto(300 , 0)
 pendown()
@@ -80,15 +81,14 @@ forward(12)
 
 left(90)
 forward(25)
-
 penup()
 goto(-150 , 50)
 pendown()
-
+end_fill()
 
 
 color("gray")
-begin_fill
+begin_fill()
 left(180)
 forward(25)
 
@@ -135,13 +135,12 @@ forward(12)
 right(90)
 forward(25)
 
-end_fill
+end_fill()
 penup()
 goto(100 , 0)
 pendown()
 
 color("gray")
-begin_fill
 right(180)
 forward(150)
 color("red")
@@ -158,12 +157,12 @@ end_fill()
 color("gray")
 left(45)
 forward(150)
-end_fill
+end_fill()
 penup()
 goto(100 , 150)
 pendown()
 color("black")
-begin_fill
+begin_fill()
 right(180)
 forward(125)
 
@@ -175,49 +174,6 @@ forward(100)
 
 right(90)
 forward(200)
-end_fill
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+end_fill()
 
 exitonclick()
