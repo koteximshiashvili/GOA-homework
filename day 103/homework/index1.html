@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Document</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
         }
 
         .game-container {
-            max-width: 600px;
+            width: 600px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -68,14 +68,14 @@
             border-radius: 8px;
         }
 
-        .game-entry {
+        .game {
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
             color: white;
         }
 
-        .game-entry p {
+        .game p {
             margin: 0;
             font-size: 14px;
         }
@@ -159,7 +159,7 @@
             historyDiv.innerHTML = '<h3>Game History</h3>';
             gameHistory.forEach((game, index) => {
                 historyDiv.innerHTML += `
-                    <div class="game-entry" style="background-color: ${game.result === 'You win!' ? '#4CAF50' : game.result === 'You lose!' ? '#f44336' : '#FFC107'};">
+                    <div class="game" style="background-color: ${game.result === 'You win!' ? '#4CAF50' : game.result === 'You lose!' ? '#f44336' : '#FFC107'};">
                         <p><strong>Game ${index + 1}</strong></p>
                         <p><strong>Your Choice:</strong> ${game.playerChoice}</p>
                         <p><strong>Computer's Choice:</strong> ${game.computerChoice}</p>

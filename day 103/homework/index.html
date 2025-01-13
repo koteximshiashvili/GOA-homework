@@ -42,7 +42,7 @@
         <button onclick="startGame()">Start Game</button>
     </div>
 
-    <div id="game-screen" class="hidden">
+    <div id="game-screen">
         <h1 id="welcomeMessage"></h1>
         <p class="score">Score: <span id="score">0</span></p>
         <p>Guess Number: <span id="randomNumber"></span></p>
@@ -66,13 +66,14 @@
         if(localStorage.getItem('userName')) {
             userName = localStorage.getItem('userName');
             document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('game-screen').style.display = 'block';
             startGame();
         }
 
         function startGame() {
             if (!userName) {
                 userName = document.getElementById('userName').value;
-                localStorage.setItem('userName', userName);
+                localStorage.setItem(userName, userName);
                 document.getElementById('welcomeMessage').textContent = `Welcome ${userName}!`;
                 document.getElementById('start-screen').style.display = 'none';
                 document.getElementById('game-screen').style.display = 'block';
@@ -107,7 +108,6 @@
             const selectedColor = document.getElementById('colorPicker').value;
             document.body.style.backgroundColor = selectedColor;
         }
-        localStorage.clear()
 </script>
 </body>
 </html>
