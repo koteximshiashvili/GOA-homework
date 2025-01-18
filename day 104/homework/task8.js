@@ -11,8 +11,8 @@ const people = [
 const olderThan30 = (arr) => {
     return arr.filter(({ age }) => age > 30);
 };
-  
+
 const result = olderThan30(people);
-  
+
 console.log(result);
   
