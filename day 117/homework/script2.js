@@ -5,7 +5,7 @@ class TimeHelper{
         return new Date();
     };
     static get normalTime(){
-        return new Date().toLocaleTimeString();
+        return TimeHelper.time.toLocaleDateString();
     };
     static get startTimer(){
         if(this.started === false){
@@ -16,7 +16,7 @@ class TimeHelper{
             }, 1000);
         }
         else{
-            console.log("timer already started")
+            console.log("timer already started");
         };
     };
     static get stopTimer(){
