@@ -10,7 +10,7 @@ class Animal {
     }
 }
 
-class Vehicle {
+class Car {
     constructor(type, speed, color) {
         this.type = type;
         this.speed = speed;
@@ -35,7 +35,7 @@ class Person {
 }
 
 const dog = new Animal("dog", 5, "brown");
-const car = new Vehicle("honda", 120, "red");
+const car = new Car("honda", 120, "red");
 const kote = new Person("kote", 30, "programmer");
 
 console.log(dog.makeSound());

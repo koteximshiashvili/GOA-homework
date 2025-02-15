@@ -5,3 +5,5 @@ function students(map){
     return map;
 };
 console.log(students(new Map([["kote", 99], ["andria", 97]])));
+
+
