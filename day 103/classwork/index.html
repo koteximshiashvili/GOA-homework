@@ -19,7 +19,7 @@
                 randomID += characters[Math.floor(Math.random() * characters.length)];
             }
             localStorage.setItem(randomID, randomID);
-            document.getElementById('result').innerText = `Generated ID: ${randomID}`;
+            document.getElementById('result').innerText = `Generated id: ${randomID}`;
         }
 
         function checkID() {
@@ -28,13 +28,13 @@
             for (let i = 0; i < localStorage.length; i++) {
                 const key = localStorage.key(i);
                 if (key === userID) {
-                    document.getElementById('result').innerText = `ID: ${userID} exists.`; 
+                    document.getElementById('result').innerText = `id: ${userID} exists.`; 
                     found = true;
                     break;
                 }
             }
             if (!found) {
-                document.getElementById('result').innerText = `ID: ${userID} does not exist.`;
+                document.getElementById('result').innerText = `id: ${userID} does not exist.`;
             }
         }
 
