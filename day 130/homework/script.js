@@ -1,4 +1,5 @@
 async function getJoke(category){
+    try{
     let fetchedData = await fetch("https://v2.jokeapi.dev/joke/Any?safe-mode");
     if(!fetchedData.ok){
         throw new Error("Error.")
@@ -15,14 +16,21 @@ async function getJoke(category){
             document.querySelector('p').innerHTML = data.setup;
             document.querySelector('span').innerHTML = data.delivery;
     }
+    }catch(err){
+        console.error(err)
+    }
 }
 async function getAdvice(){
+    try{
     let fetchedData = await fetch("https://api.adviceslip.com/advice");
     if(!fetchedData.ok){
         throw new Error("Error.")
     }
     let data = await fetchedData.json();
     document.querySelector('div').innerHTML = data.slip.advice;
+    }catch(err){
+        console.error(err)
+    }
 }
 getAdvice()
 document.querySelector('.advice').addEventListener('click', function(){
