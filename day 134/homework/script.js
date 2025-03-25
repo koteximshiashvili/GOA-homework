@@ -8,18 +8,18 @@ document.querySelector('button').addEventListener('click', function(){
     let in2 = document.querySelector('.in2').value;
     let in3 = document.querySelector('.in3').value;
     if(in3 === '+'){
-        alert(plus(in1, in2))
+        alert(plus(in1, in2));
     }
     else if(in3 === '-'){
-        alert(minus(in1, in2))
+        alert(minus(in1, in2));
     }
     else if(in3 === '*'){
-        alert(multiply(in1, in2))
+        alert(multiply(in1, in2));
     }
     else if(in3 === '/'){
-        alert(divide(in1, in2))
+        alert(divide(in1, in2));
     }
     else{
-        alert('invalid')
-    }
+        alert('invalid');
+    };
 });

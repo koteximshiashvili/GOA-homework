@@ -1,4 +1,4 @@
-fetch("https://fakestoreapi.com/products").then(res => console.log(res.json())).then(res => {
+fetch("https://fakestoreapi.com/products").then(res => res.json()).then(res => {
     res.forEach(product => {
       document.body.innerHTML += `
         <div class="card">
