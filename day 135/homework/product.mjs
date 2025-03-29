@@ -34,16 +34,13 @@ export function renderProducts(array){
         priceP.className = 'price';
         priceP.textContent = product.price;
 
-        button.className = "btn"
+        button.className = "btn";
         button.textContent = 'Add to cart';
         button.addEventListener('click', function () {
             addToCart(this, div);
         });
 
-        div.appendChild(nameH3);
-        div.appendChild(priceP);
-        div.appendChild(button);
-
+        div.append(nameH3, priceP, button);
         document.body.appendChild(div);
     });
 }
