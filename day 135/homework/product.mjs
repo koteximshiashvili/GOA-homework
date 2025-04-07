@@ -27,14 +27,14 @@ export function renderProducts(array){
         const nameH3 = document.createElement('h3');
         const priceP = document.createElement('p');
         const button = document.createElement('button');
-        div.className = "card"
-        nameH3.className = 'name';
+        div.className = ""
+        nameH3.className = '';
         nameH3.textContent = product.name;
 
-        priceP.className = 'price';
+        priceP.className = '';
         priceP.textContent = product.price;
 
-        button.className = "btn";
+        button.className = "";
         button.textContent = 'Add to cart';
         button.addEventListener('click', function () {
             addToCart(this, div);
