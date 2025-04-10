@@ -94,6 +94,7 @@ function renderProducts(array){
         button.textContent = 'Add to cart';
         button.addEventListener('click', function () {
             addToCart(this, div);
+            console.log(this)
         });
 
         div.append(img, nameH3, priceP, button);
