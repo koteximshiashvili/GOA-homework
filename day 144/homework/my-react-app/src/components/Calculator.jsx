@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState } from "react";
 function Calculator(){
    const [count, setCount] = useState(0);
    const [numberOne, setNumberOne] = useState(0);
