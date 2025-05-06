@@ -14,7 +14,7 @@ export default function UserList({ users }){
                 <span>email: {user.email}</span>
                 <span>user: {user.username}</span>
             </div>
-            <button className="w-[140px] h-[40px] rounded-full text-white bg-[#141828] text-[18px] cursor-pointer">Follow</button>
+            <button className="w-[140px] h-[40px] font-bold rounded-full text-white bg-[#141828] text-[18px] cursor-pointer">Follow</button>
             </div>
         )
     )}
