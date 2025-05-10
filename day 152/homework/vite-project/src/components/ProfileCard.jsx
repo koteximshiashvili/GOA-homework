@@ -1,5 +1,4 @@
 export default function ProfileCard({ profile, favorite }) {
-
     const { name, phone, email, image, isFavorite } = profile;
   
     return (

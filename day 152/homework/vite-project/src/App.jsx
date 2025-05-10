@@ -55,7 +55,7 @@ function App() {
       <Input value={text} setText={setText}/>
       <Text text={text}/>
       {arr1.map((el, index) => <p key={index}>{el ? 1 : 0}</p>)}
-      {profiles.map((profile) => (
+      {profiles.map(profile => (
         <ProfileCard key={profile.id} profile={profile} favorite={() => favorite(profile.id)}
         />
       ))}
