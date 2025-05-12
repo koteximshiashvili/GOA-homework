@@ -8,11 +8,11 @@ const App = () => {
   const [history, setHistory] = useState([]);
 
   const updateCount = (newCount) => {
-    if (newCount > count) setColor("text-green-600");
-    else if (newCount < count) setColor("text-red-600");
-    else setColor("text-black");
+    if (newCount > count) setColor("text-green-600")
+    else if (newCount < count) setColor("text-red-600")
+    else setColor("text-black")
 
-    setCount(newCount);
+    setCount(newCount)
     setHistory((prev) => {
       const updatedHistory = [newCount, ...prev];
       if (updatedHistory.length > 5) updatedHistory.pop();
