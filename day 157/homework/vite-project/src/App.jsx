@@ -3,6 +3,7 @@ import { Parts } from "./components/Parts.jsx";
 import { useState } from "react";
 
 function App() {
+  console.log(<h1 id="hello"><p>hello</p></h1>)
   const [cart, setCart] = useState([]);
 
   function getTotal() {
