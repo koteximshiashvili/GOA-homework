@@ -6,7 +6,7 @@ export const PersonalExpenseTracker = () => {
   const [amount, setAmount] = useState('');
   const [date, setDate] = useState('');
   const [expenses, setExpenses] = useState([]);
-
+  
   const submit = (e) => {
     e.preventDefault();
     if (!expense || !amount || !date) return;
