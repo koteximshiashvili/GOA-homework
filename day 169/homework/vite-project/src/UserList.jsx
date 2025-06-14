@@ -13,10 +13,9 @@ const UserList = () => {
                 const data = await fetchedData.json();
                 console.log(data, fetchedData)
                 setUsers(data)
-                
             } catch(err){
                 setIsOk(false);
-                console.error(err)
+                console.error(err);
             }
         }
         getData()
