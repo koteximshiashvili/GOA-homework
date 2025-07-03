@@ -1,14 +1,14 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react';
 
 const Form = () => {
     const inputRef = useRef(null);
     const inputRef1 = useRef(null);
     function check(){
-        if(!inputRef.current.value){
-            inputRef.current.focus();
+        if(!inputRef.current?.value){
+            inputRef.current?.focus();
         }
-        else if(!inputRef1.current.value){
-            inputRef1.current.focus();
+        else if(!inputRef1.current?.value){
+            inputRef1.current?.focus();
         }
     }
     useEffect(check, []);
