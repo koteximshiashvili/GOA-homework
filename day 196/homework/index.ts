@@ -28,7 +28,7 @@ function makeRequest(request: "GET" | "POST" | "PUT" | "DELETE") : string {
     return `Making ${request} request`
 }
 console.log(makeRequest("GET"));
-function rollDice(){
+function rollDice() : string{
     return ["one", "two", "three", "four", "five", "six"][Math.floor(Math.random() * 6)];
 }
 console.log(rollDice());
