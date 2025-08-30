@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 
 const Task3 = () => {
-      const [seconds, setSeconds] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
 
